@@ -6,7 +6,6 @@ function CounterGroup(props){
     const [counterList,seCounterList] = useState([]);
 
     useEffect(()=> {
-        console.log('props.size',props.size)
         const counterList = new Array(props.size).fill(Date.now());
         seCounterList(counterList);
     },[props.size]
